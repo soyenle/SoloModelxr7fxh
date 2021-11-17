@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>SoloModel</title>
+        <title>1SoloModel</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -32,23 +32,16 @@
                     gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
                 ></a-entity>
             
-                <a-entity
-                    look-at="[gps-camera]"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
-                    scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
-                    gps-entity-place="latitude: 50.092094440420894; longitude: 8.577992012724282;"
-                ></a-entity>
-            
+
             <a-entity
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="assets/pokemon_arena/scene.gltf"
-                    scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
+                    scale="0.4 0.4 0.4"
                     gps-entity-place="latitude: 50.092094440420894; longitude: 8.577992012724282;"
                 ></a-entity>
 
-            <a-camera gps-camera rotation-reader></a-camera>
+            <a-camera gps-camera="maxDistance: 2;"></a-camera>
         </a-scene>
     </body>
 </html>
