@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>5SoloModel.js demo</title>
+    <title>6SoloModel.js demo</title>
     <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script>
@@ -34,7 +34,15 @@
      
                 ></a-entity>
         
+         <a-entity                      
+                    gltf-model="assets/magnemite/magnemite/scene.gltf"
+                    scale="0.3 0.3 0.3"                   
+                    gps-entity-place="latitude: 50.091736; longitude: 8.578841;"
+                  
+   
+                ></a-entity>
         
-    <a-camera gps-camera="minDistance: 1;" rotation-reader></a-camera>
+        
+    <a-camera gps-camera="minDistance: 2;" rotation-reader></a-camera>
 </a-scene>
 </body>
