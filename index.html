@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>4GeoAR.js demo</title>
+    <title>5GeoAR.js demo</title>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 
@@ -15,18 +15,33 @@
 		embedded
 		arjs='sourceType: webcam; debugUIEnabled: false;'>
 
-        <!-- too near, is like 2m far -->
-        <a-box material="color: red;" scale="15 15 15" gps-entity-place="latitude: 44.504493; longitude: 11.301134;"></a-box>
-
-        <!-- visible, is like 400m far -->
-        <a-box material="color: yellow;" scale="15 15 15" gps-entity-place="latitude: 44.506477; longitude: 11.301524;"></a-box>
-
-        <!-- too far, is like 2.5km far -->
-        <a-box material="color: green;" scale="15 15 15" gps-entity-place="latitude: 44.500013; longitude: 11.277351;"></a-box>
+       <a-entity                      
+                    gltf-model="assets/asset.gltf"
+                    scale="0.6 0.6 0.6"                   
+                    gps-entity-place="latitude: 50.092258; longitude: 8.57765;"
+               
+                ></a-entity>
+        
+         <a-entity                      
+                    gltf-model="assets/magnemite/magnemite/scene.gltf"
+                    scale="0.2 0.2 0.2"                   
+                    gps-entity-place="latitude: 50.091736; longitude: 8.578841;"
+                    
+                 
+                ></a-entity>
+        
+        <a-entity                      
+                    gltf-model="assets/pokemon_arena/scene.gltf"
+                    scale="0.1 0.1 0.1"                   
+                    gps-entity-place="latitude: 50.092238; longitude: 8.578169;"
+                   
+             
+                      
+                ></a-entity>
 
         <a-camera
             rotation-reader
-            gps-camera="simulateLatitude: 44.504348; simulateLongitude: 11.301027; minDistance: 20; maxDistance: 3000;"
+            gps-camera="simulateLatitude: 50.092258; simulateLongitude: 8.57765; minDistance: 0; maxDistance: 0;"
         >
 		</a-camera>
 	</a-scene>
