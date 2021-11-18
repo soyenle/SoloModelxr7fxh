@@ -1,11 +1,10 @@
 <!doctype html>
 <html>
     <head>
-        <title>11SoloModel</title>
+        <title>12SoloModel</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>     
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
@@ -26,7 +25,6 @@
             </a-assets>
 
                 <a-entity
-                    look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     scale="0.9975820971489867 0.9975820971489867 0.9975820971489867"
@@ -34,15 +32,14 @@
                 ></a-entity>
             
 
-            <a-entity
-                    
+            <a-entity 
                     animation-mixer="loop: repeat"
                     gltf-model="assets/pokemon_arena/scene.gltf"
                     scale="0.8 0.8 0.8"
                     gps-entity-place="latitude: 50.091519; longitude: 8.579026;"
                 ></a-entity>
 
-            <a-camera gps-camera="maxDistance: 5;"></a-camera>
+            <a-camera gps-camera="maxDistance: 2;"></a-camera>
         </a-scene>
     </body>
 </html>
